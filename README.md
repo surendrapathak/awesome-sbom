@@ -14,10 +14,11 @@ From [Wikipedia](https://en.wikipedia.org/wiki/Software_bill_of_materials):
     - 🗒️ [Docs](#docs)
     - 📰 [Blogs](#blogs-and-articles)
 - 🐾 [Community Repositories](#community-repositories)
-- 🗃️ [Blogs and Articles](#blogs-and-articles)
+- 🗃️ [Blogs and Articles](#articles-and-blogs-1)
 - 📹 [Videos](#videos)
 - 📑 [Slides](#slides)
 - 🎤 [Podcasts](#podcasts)
+- :chart_with_upwards_trend: [Benchmarks](#benchmarks)
 
 ## Official projects
 
@@ -27,9 +28,43 @@ From [Wikipedia](https://en.wikipedia.org/wiki/Software_bill_of_materials):
 - [NTIA](https://www.ntia.gov/SBOM) - Official National Telecommunications and Information Administration Page
 - [What is an SBOM?](https://www.linuxfoundation.org/blog/what-is-an-sbom/) - The Linux Foundation Article
 
+### Tools (and [classification](https://ntia.gov/sites/default/files/publications/ntia_sbom_tooling_taxonomy-2021mar30_0.pdf))
+
+|Tool|Build SBOM|Analyze SBOM|Edit SBOM|View SBOM|Diff SBOM|Import SBOM|Translate SBOM|Merge SBOM|Integrate with Other Tools|
+|----|:--------:|:----------:|:-------:|:-------:|:-------:|:---------:|:------------:|:--------:|:------------------------:|
+|AnthonyHarrison [SBOM4Python](https://pypi.org/project/sbom4python/)|CycloneDX,SPDX |
+|AnthonyHarrison [SBOM4Rust](https://pypi.org/project/sbom4rust/)|CycloneDX,SPDX|
+|AnthonyHarrison [SBOM4Files](https://pypi.org/project/sbom4files/)|CycloneDX,SPDX|
+|AnthonyHarrison [Distro2SBOM](https://pypi.org/project/distro2sbom/)|CycloneDX,SPDX|
+|AnthonyHarrison [SBOMDiff](https://pypi.org/project/sbomdiff/)| |CycloneDX,SPDX|CycloneDX,SPDX|
+|AnthonyHarrison [SBOM2doc](https://pypi.org/project/sbom2doc/)| |CycloneDX,SPDX|CycloneDX,SPDX|
+|AnthonyHarrison [SBOM2dot](https://pypi.org/project/sbom2dot/)| |CycloneDX,SPDX|CycloneDX,SPDX|
+|AnthonyHarrison [SBOMAudit](https://pypi.org/project/sbomaudit/)| |CycloneDX,SPDX|CycloneDX,SPDX|
+|AnthonyHarrison [SBOM-Manager](https://pypi.org/project/sbom-manager/)| |CycloneDX,SPDX|CycloneDX,SPDX|
+|[bomber](https://github.com/devops-kung-fu/bomber)| |CycloneDX,SPDX| |CycloneDX,SPDX|
+|[CycloneDX Maven Plugin](https://github.com/CycloneDX/cyclonedx-maven-plugin)|CycloneDX|
+|[CycloneDX CLI tool](https://github.com/CycloneDX/cyclonedx-cli)| | |CycloneDX| |CycloneDX| |CycloneDX,SPDX|CycloneDX|
+|CycloneDX [cdxgen](https://github.com/CycloneDX/cdxgen)|CycloneDX| | | | | | | |CycloneDX|
+|Interlynk [SBOM Assembler](https://github.com/interlynk-io/sbomasm)|CycloneDX,SPDX| | | | | | |CycloneDX,SPDX|CycloneDX,SPDX|
+|Interlynk [SBOM Quality Score](https://github.com/interlynk-io/sbomqs)| |CycloneDX,SPDX| |CycloneDX,SPDX| | | | |CycloneDX,SPDX|
+|Interlynk [SBOM Grep](https://github.com/interlynk-io/sbomgr)| |CycloneDX,SPDX||CycloneDX,SPDX|||||CycloneDX,SPDX|
+|Interlynk [SBOM Find & Pull](https://github.com/interlynk-io/sbomex)| || |CycloneDX,SPDX| | | | |CycloneDX,SPDX|
+|[Kubernetes SBOM Tool](https://sigs.k8s.io/bom)|SPDX|
+|Microsoft [SBOM tool](https://github.com/microsoft/sbom-tool)|SPDX|
+|[Syft](https://github.com/anchore/syft)|CycloneDX,SPDX|CycloneDX,SPDX| |CycloneDX,SPDX|
+|Snyk SBOM [API](https://docs.snyk.io/snyk-api-info) & [CLI](https://docs.snyk.io/snyk-cli)|CycloneDX,SPDX|
+|[Snyk SBOM Checker](https://snyk.io/code-checker/sbom-security/)| |CycloneDX,SPDX|
+|[SPDX Maven Plugin](https://github.com/spdx/spdx-maven-plugin)|SPDX|
+|[SPDX Gradle Plugin](https://github.com/spdx/spdx-gradle-plugin)|SPDX|
+|[spdx-sbom-generator](https://github.com/spdx/spdx-sbom-generator)|SPDX|
+|[SwiftBOM](https://github.com/CERTCC/SBOM/tree/master/SwiftBOM)|CycloneDX,SPDX,SWID|
+|[Tern](https://github.com/tern-tools/tern)|CycloneDX,SPDX|
+|[Trivy](https://github.com/aquasecurity/trivy)|CycloneDX,SPDX|CycloneDX,SPDX| |CycloneDX,SPDX|
+
 ### Repositories
 
 - [CycloneDX Specification](https://github.com/CycloneDX/specification)
+- [CycloneDX BOM Examples](https://github.com/CycloneDX/bom-examples)
 - [CycloneDX/cyclonedx-maven-plugin](https://github.com/CycloneDX/cyclonedx-maven-plugin)
 - [spdx-sbom-generator](https://github.com/spdx/spdx-sbom-generator)
 - [tern-tools/tern](https://github.com/tern-tools/tern)
@@ -39,12 +74,22 @@ From [Wikipedia](https://en.wikipedia.org/wiki/Software_bill_of_materials):
 - [microsoft/sbom-tool](https://github.com/microsoft/sbom-tool)
 - [SwiftBOM - generate SBOMs](https://github.com/CERTCC/SBOM/tree/master/SwiftBOM)
 - [Kubernetes SBOM Tool](https://sigs.k8s.io/bom)
-- [CycloneDX BOM Examples](https://github.com/CycloneDX/bom-examples)
 - [Aqua Trivy](https://github.com/aquasecurity/trivy)
 - [bomber](https://github.com/devops-kung-fu/bomber)
   - [Snyk provider](https://github.com/devops-kung-fu/bomber/tree/main/providers/snyk)
 - Snyk SBOM [API](https://docs.snyk.io/snyk-api-info) and [CLI](https://docs.snyk.io/snyk-cli)
 - [Snyk SBOM Checker](https://snyk.io/code-checker/sbom-security/)
+- [Interlynk SBOM Assembler](https://github.com/interlynk-io/sbomasm)
+- [Interlynk SBOM Quality Score](https://github.com/interlynk-io/sbomqs)
+- [Interlynk SBOM Grep](https://github.com/interlynk-io/sbomgr)
+- [Interlynk SBOM Find and Pull](https://github.com/interlynk.io/sbomex)
+
+## CycloneDX
+
+- [CycloneDX Capabilities](https://cyclonedx.org/capabilities/)
+- [CycloneDX Use Cases and Examples](https://cyclonedx.org/use-cases/)
+- [CycloneDX Tool Center](https://cyclonedx.org/tool-center/)
+- [Specification Overview](https://cyclonedx.org/specification/overview/)
 
 ## SPDX
 
@@ -82,6 +127,8 @@ From [Wikipedia](https://en.wikipedia.org/wiki/Software_bill_of_materials):
 - [What an SBOM Can Do for You](https://chainguard.dev/posts/2022-01-13-what-an-sbom-can-do-for-you)
 - [BOM 101 – All the questions you were afraid to ask Software Bill of Materials](https://sysdig.com/blog/sbom-101-software-bill-of-materials/)
 - [How to create SBOMs in Java with Maven and Gradle](https://snyk.io/blog/create-sboms-java-maven-gradle/) - Snyk blog
+- [Comparing SBOM Standards: SPDX vs. CycloneDX](https://blog.sonatype.com/comparing-sbom-standards-spdx-vs.-cyclonedx-vs.-swid)
+- [Top 10 Things You Should Know About Using SBOM to Secure Industrial IoT Devices - Red Alert Labs](https://www.redalertlabs.com/blog/top-10-things-you-should-know-about-using-sbom-to-secure-industrial-iot-devices)
 
 ## Videos
 
@@ -89,10 +136,17 @@ From [Wikipedia](https://en.wikipedia.org/wiki/Software_bill_of_materials):
 - [Software Bill of Materials: How to generate an SBOM from container images using Syft](https://www.youtube.com/watch?v=9oj3BC3vOtc)
 - [SwiftBOM - generate SBOMs for PoC efforts and demos](https://youtube.com/playlist?list=PLKr8MJRsuoPHGqfcoj8auu7zax8oLRPsH)
 - [Kubernetes Atlanta Meetup - Nov 2021 - SBOMs Container Signing and Verification, Intro to Gatekeeper](https://www.youtube.com/watch?v=PuTJ176djsc&t=22s)
+- [FOSDEM 2023 - The 7 key ingredients of a great SBOM](https://fosdem.org/2023/schedule/event/sbom_key_ingredients/)
 
 ## Slides
 
 - [Software Bill of Materials Presentation](https://csrc.nist.gov/CSRC/media/Projects/cyber-supply-chain-risk-management/documents/SSCA/Spring_2019/8MayAM2.3_Software_Bill_of_Materials_Robert_Martin_05_08_19_clean.pdf)
 
 ## Podcasts
-_None yet, please contribute!_
+- [DaBOM Podcast](https://dabom.show/)
+
+## Benchmarks
+- [SBOM Benchmark](https://sbombenchmark.dev) Quickly evaluate SBOM for quality, compliance and errors.
+
+
+
